@@ -20,10 +20,12 @@ jobs:
           gradle-version: '8.3'
       - name: Build APK
         working-directory: android-app
-        run: gradle assembleRelease --no-daemon
+        run: gradle assembleDebug --no-daemon
+      - name: List APK files
+        run: find android-app/app/build/outputs -name "*.apk" 2>/dev/null || echo "No APK found"
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
           name: LingoLive-APK
-          path: android-app/app/build/outputs/apk/release/app-release-unsigned.apk
+          path: android-app/app/build/outputs/apk/debug/app-debug.apk
           retention-days: 30
