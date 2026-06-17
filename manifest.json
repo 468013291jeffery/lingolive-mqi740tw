@@ -1,7 +1,7 @@
 {
-  "name": "LingoLive 日语学习",
+  "name": "LingoLive",
   "short_name": "LingoLive",
-  "description": "同声传译 · 日语学习 · 完全免费",
+  "description": "Japanese Learning App",
   "start_url": "/lingolive-mqi740tw/",
   "scope": "/lingolive-mqi740tw/",
   "display": "standalone",
@@ -18,12 +18,9 @@
     {
       "src": "icon-512.png",
       "sizes": "512x512",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any maskable"
     }
   ],
-  "lang": "zh-CN",
-  "categories": [
-    "education",
-    "utilities"
-  ]
+  "lang": "zh-CN"
 }
